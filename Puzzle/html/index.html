@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Puzzle</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Custom css -->
+	<link rel="stylesheet" href="../css/styles.css">
+	<!-- Javascript libraries -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="../js/snapfit.js"></script>
+	<script src="../js/script.js"></script>
+</head>
+<body>
+	<div>
+	<a href="#img1" class="btn btn-info" data-toggle="collapse">Simple collapsible</a>
+		<!-- <button type="button" id class="btn btn-success" data-toggle="collapse">show <span class="glyphicon glyphicon-heart"></span></button> -->
+		<img class="img1c collapse" id="img1" onLoad="snapfit.add(this);" src="http://placehold.it/350x150" alt="">
+<!-- 		<button type="button" onclick="snapfit.admix(document.getElementById('img1'));">Admix</button>
+ -->	</div>
+ <div>
+		<button type="button" class="btn btn-success" onclick="showImg2()">show <span class="glyphicon glyphicon-heart"></span></button>
+		<img class="img2c hide" id="img2" onLoad="snapfit.add(this);" src="http://placehold.it/400x400" alt="">
+</div>
+
+</body>
+</html>
